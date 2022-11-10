@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+	<tr>
+		<th> <a th:href="@{/product/reg}">REGISTER</a></th>
+		<th> <a th:href="@{/product/all}">VIEW ALL</a></th>
+	</tr>
+</table>
+<h3>WELCOME TO PRODUCT REGISTER PAGE</h3>
+<form th:action="@{/product/save}" method="post" th:object="${product}">
+<pre>
+CODE  : <input type="text" th:field="*{prodCode}"/>
+ COST : <input type="text" th:field="*{prodCost}"/>
+TYPE  : 
+     <input type="radio" th:field="*{prodType}" value="VENDOR"/> VENDOR 
+     <input type="radio" th:field="*{prodType}" value="FACTORY"/> FACTORY
+ NOTE:
+      <textarea th:field="*{prodNote}"></textarea>
+      
+MODEL : <select th:field="*{prodModel}">
+			<option value="">-SELECT-</option>
+			<option value="RED">RED</option>
+			<option value="BLUE">BLUE</option>
+			<option value="GREEN">GREEN</option>
+		</select>    
+ DESIGN:
+     <input type="checkbox" th:field="*{prodDesign}" value="BIG SIZE"/> BIG SIZE		    
+     <input type="checkbox" th:field="*{prodDesign}" value="OFFER"/> OFFER		    
+     <input type="checkbox" th:field="*{prodDesign}" value="IN STOCK"/> IN STOCK		    
+		     
+ 	<input type="submit" value="Register"/>
+</pre>
+</form>
+<span th:text="${message}"></span>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringBoot_Crud_With_RestFul_Swagger"/>
+<aop-project name="SpringBootRunner"/>
+<aop-project name="SpringBootUICurd-using_Thymeleaf"/>
+<aop-project name="SpringBoot_Forms_in_Thymeleaf"/>
+<aop-project name="SpringJPADemo"/>
+<aop-project name="SpringBoot_With_MongoDB"/>
+</aop-reference-model>

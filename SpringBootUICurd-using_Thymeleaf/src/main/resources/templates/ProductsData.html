@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>WELCOME TO PRODUCTS DATA PAGE</h3>
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>CODE</th>
+		<th>COST</th>
+		<th>DISCOUNT</th>
+		<th>GST</th>
+		<th>OPERATION</th>
+	</tr>
+	<tr th:each="ob:${list}"> <!-- Like: ForLoop -->
+		<td th:text="${ob.prodId}"></td>   <!--Like: out.println -->
+		<td th:text="${ob.prodName}"></td>
+		<td th:text="${ob.prodCost}"></td>
+		<td th:text="${ob.discount}"></td>
+		<td th:text="${ob.gst}"></td>
+		<td>
+			 <a th:href="@{/product/delete/{id}(id=${ob.prodId})}"> DELETE </a>
+		</td>
+	</tr>
+</table>
+<span th:text="${message}"></span>   <!--Like: out.println -->
+</body>
+</html>

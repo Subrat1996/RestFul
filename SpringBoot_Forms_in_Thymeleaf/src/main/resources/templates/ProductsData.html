@@ -1,0 +1,46 @@
+!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+	<tr>
+		<th> <a th:href="@{/product/reg}">REGISTER</a></th>
+		<th> <a th:href="@{/product/all}">VIEW ALL</a></th>
+	</tr>
+</table>
+<h3>WELCOME TO PRODUCTS DATA PAGE</h3>
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>CODE</th>
+		<th>COST</th>
+		<th>DISCOUNT</th>
+		<th>GST</th>
+		<th>TYPE</th>
+		<th>NOTE</th>
+		<th>MODLE</th>
+		<th>DESIGN</th>
+		<th>OPERATION</th>
+	</tr>
+	<tr th:each="ob:${list}"> <!-- Like: ForLoop -->
+		<td th:text="${ob.prodId}"></td>   <!--Like: out.println -->
+		<td th:text="${ob.prodCode}"></td>
+		<td th:text="${ob.prodCost}"></td>
+		<td th:text="${ob.prodDiscount}"></td>
+		<td th:text="${ob.prodGst}"></td>
+		<td th:text="${ob.prodType}"></td>
+		<td th:text="${ob.prodNote}"></td>
+		<td th:text="${ob.prodModel}"></td>
+		<td th:text="${ob.prodDesign}"></td>
+		<td>
+			 <a th:href="@{/product/delete/{id}(id=${ob.prodId})}"> DELETE </a> | 
+			 <a th:href="@{/product/edit/{id}(id=${ob.prodId})}"> EDIT </a>
+		</td>
+	</tr>
+</table>
+<span th:text="${message}"></span>   <!--Like: out.println -->
+</body>
+</html>

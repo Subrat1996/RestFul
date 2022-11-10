@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringBoot_Crud_Using_RestFul&apos; to &apos;SpringBoot_Crud_With_RestFul_Swagger&apos;" description="Rename resource &apos;SpringBoot_Crud_Using_RestFul&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SpringBoot_Crud_Using_RestFul" name="SpringBoot_Crud_With_RestFul_Swagger" stamp="1589854024513" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringBoot_Forms_in_Thymeleaf/src/main/resources/templates/ProductData.html&apos; to &apos;ProductsData.html&apos;" description="Rename resource &apos;ProductData.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/ProductData.html" name="ProductsData.html" stamp="1588786864438" updateReferences="true"/>
+</session>

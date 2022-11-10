@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SpringBootSecurityApplication.java&apos; to &apos;SpringBootSecurity_DemoApp/src/main/java/com.boot.security&apos;&#x0D;&#x0A;- Original project: &apos;spring-boot-security&apos;&#x0D;&#x0A;- Destination element: &apos;SpringBootSecurity_DemoApp/src/main/java/com.boot.security&apos;&#x0D;&#x0A;- Original element: &apos;io.javabrains.springbootsecurity.SpringBootSecurityApplication.java&apos;" description="Copy compilation unit" destination="=SpringBootSecurity_DemoApp/src\/main\/java&lt;com.boot.security" element1="/src\/main\/java&lt;io.javabrains.springbootsecurity{SpringBootSecurityApplication.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1585135555379" units="1" version="1.0"/>
+</session>

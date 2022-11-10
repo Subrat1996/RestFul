@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.boot.Repository.Repository&apos; to &apos;CollegeRepository&apos;&#x0D;&#x0A;- Original project: &apos;SpringBootWithJPA&apos;&#x0D;&#x0A;- Original element: &apos;com.boot.Repository.Repository&apos;&#x0D;&#x0A;- Renamed element: &apos;com.boot.Repository.CollegeRepository&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Repository&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.boot.Repository{Repository.java[Repository" matchStrategy="1" name="CollegeRepository" qualified="false" references="true" similarDeclarations="true" stamp="1585508448252" textual="false" version="1.0"/>
+</session>
